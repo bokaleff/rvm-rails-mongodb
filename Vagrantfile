@@ -70,6 +70,6 @@ Vagrant.configure(2) do |config|
   # SHELL
   config.vm.provision :shell, path: "scripts/install-rvm.sh",  args: "stable", privileged: false
   config.vm.provision :shell, path: "scripts/install-ruby.sh", args: "2.3.3 'rails -v 5.0.0.1'",  privileged: false
-  config.vm.provision :shell, path: "scripts/install-postgres.sh",  args: "9.6", privileged: false 
+  config.vm.provision :shell, path: "scripts/install-mongodb.sh", privileged: false 
 
 end
